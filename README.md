@@ -1,1 +1,1 @@
-# P.J.-Electrodom-stics
+# P.J. Electrodomèstics
