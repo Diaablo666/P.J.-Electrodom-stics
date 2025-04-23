@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://via.placeholder.com/1200x800?text=Fons+de+botiga');
+    background-size: cover;
+    background-position: center;
+    color: #0a0808;
+}
+
+h2 {
+    margin-top: 40px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    color: #000000;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #000000;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ddd;
+}
+
+/* Product Item Design */
+.product-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.product-item:hover {
+    transform: scale(1.02);
+}
+
+/* Ajustes para las imágenes */
+.product-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 250px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Button Styles */
+.product-item button {
+    width: 100%;
+    background-color: #962222;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.product-item button:hover {
+    background-color: #218838;
+}
+
+/* Cart List */
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #050404;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.list-group-item:hover {
+    transform: translateY(-5px);
+}
+
+#cartTotal {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+#checkoutBtn {
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#checkoutBtn:hover {
+    background-color: #218838;
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 8px;
+}
+
+.modal-header {
+    background-color: #28a745;
+    color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer .btn {
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px;
+    background: #292929;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Cookie Banner Styles */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: none;
+    z-index: 1000;
+}
+
+/* General Styles for HTML and Body */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+/* Flexbox Layout for Product List */
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px; /* Añadido para mejorar la separación entre productos */
+}
+
+/* Ajustes Responsivos */
+@media (max-width: 1200px) {
+    .product-item {
+        width: 48%; /* Dos productos por fila en pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-item {
+        width: 100%; /* Un producto por fila en pantallas pequeñas */
+    }
+
+    .product-item img {
+        max-height: 200px; /* Reducir la altura en pantallas más pequeñas */
+    }
+}
+
+/* Agregar sombra en hover */
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Remove Button Styles */
+.remove-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: darkred;
+}
+.product-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* Estil per a la secció de productes */
+#articles-container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Fons per al títol blanc */
+.text-white {
+    color: white !important;
+}
